@@ -1,0 +1,17 @@
+POST http://localhost:8001/auth/signup
+Content-Type: application/json
+
+{"name":"aparna","email":"aparna@gmail.com","password":"boo12345"}
+###
+
+POST http://localhost:8001/auth/login
+Content-Type: application/json
+
+{
+  "email": "aparna@gmail.com",
+  "password":"boo12345"
+}
+###
+
+GET http://localhost:8001/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Imd0Z25lQm82Ym5WcFpDNWxiR3hwY0hScFl5NWpkWEoyWlM5d2IybHVkSGdzUVd4dlRGTXhUR1ZpVjBWWGNIQkJUemsxU2paWWVrcGlSVzQ1T0VkNGNDdEVRV2x5UnpkTmNGQjZTVXM9IiwiaWF0IjoxNTk4MzcyNDg5fQ.35hqOz_gjP0Vhk877Orn1WjWLUAU9CYyhlEh8WKcjFg

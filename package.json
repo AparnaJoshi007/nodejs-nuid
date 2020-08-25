@@ -1,0 +1,43 @@
+{
+  "name": "nodejs-nuid",
+  "version": "1.0.0",
+  "description": "A trustless authentication system using nodejs and nuid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node --use_strict ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AparnaJoshi007/nodejs-nuid.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Nodejs",
+    "Trustless",
+    "Authentication"
+  ],
+  "author": "Aparna Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AparnaJoshi007/nodejs-nuid/issues"
+  },
+  "homepage": "https://github.com/AparnaJoshi007/nodejs-nuid#readme",
+  "dependencies": {
+    "@nuid/zk": "^0.1.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "nodemon": "^2.0.4"
+  }
+}
