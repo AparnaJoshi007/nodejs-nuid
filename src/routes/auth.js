@@ -61,7 +61,9 @@ router.post('/login', async (req, res) => {
       return res.status(200).json({
         jwt: localJwt
       });
-    }    
+    } else {
+      return res.status(verifiedProof.status);
+    }
   }catch(err) {
     console.log(err);
     res.status(400).send(err);
